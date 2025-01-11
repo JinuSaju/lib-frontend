@@ -1,0 +1,123 @@
+.signup-container { 
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    height: 100vh; 
+    background: #1056a7; /* Light gray background for a professional 
+look */ 
+    padding: 20px; 
+  } 
+   
+  .signup-card { 
+    background-color: #ffffff; /* White background for the form card 
+*/ 
+    padding: 40px 30px; 
+    border-radius: 10px; 
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1); 
+    width: 100%; 
+    max-width: 500px; 
+    text-align: center; 
+  } 
+   
+  .signup-title { 
+    font-size: 2rem; 
+    font-weight: bold; 
+    color: #333; /* Dark gray text */ 
+    margin-bottom: 10px; 
+  } 
+   
+  .signup-subtitle { 
+    font-size: 1rem; 
+    color: #7f8c8d; 
+    margin-bottom: 20px; 
+  } 
+   
+  .signup-form { 
+    display: flex; 
+    flex-direction: column; 
+  } 
+   
+  .form-label { 
+    font-size: 0.9rem; 
+    font-weight: bold; 
+    color: #333; /* Dark gray text */ 
+    margin-bottom: 5px; 
+    text-align: left; 
+  } 
+   
+  .input-field { 
+    width: 100%; 
+    padding: 12px; 
+    margin-bottom: 15px; 
+    border: 1px solid #ccc; 
+    border-radius: 8px; 
+    font-size: 1rem; 
+    color: #333; 
+  } 
+   
+  .input-field:focus { 
+    border-color: #3498db; /* Subtle blue focus */ 
+    box-shadow: 0 0 4px rgba(52, 152, 219, 0.5); 
+    outline: none; 
+  } 
+   
+  .terms-checkbox { 
+    display: flex; 
+    align-items: center; 
+    margin: 10px 0; 
+    text-align: left; 
+  } 
+   
+  .terms-label { 
+    font-size: 0.9rem; 
+    color: #333; 
+    margin-left: 10px; 
+  } 
+   
+  .highlight-link { 
+    color: #3498db; /* Blue color for the link */ 
+    font-weight: bold; 
+    text-decoration: underline; 
+    cursor: pointer; 
+  } 
+   
+  .highlight-link:hover { 
+    color: #2980b9; /* Darker blue on hover */ 
+    text-decoration: none; 
+  } 
+   
+  .submit-button { 
+    width: 100%; 
+    padding: 15px; 
+    background-color: #3498db; /* Professional blue */ 
+    border: none; 
+    color: white; 
+    font-size: 1.1rem; 
+    font-weight: bold; 
+    border-radius: 8px; 
+    cursor: pointer; 
+    transition: background-color 0.3s ease, box-shadow 0.3s ease; 
+  } 
+   
+  .submit-button:hover { 
+    background-color: #2980b9; /* Darker blue on hover */ 
+    box-shadow: 0 4px 10px rgba(52, 152, 219, 0.5); 
+  } 
+   
+  .submit-button:active { 
+    background-color: #1c6ea4; /* Even darker blue on click */ 
+  } 
+   
+  @media (max-width: 768px) { 
+    .signup-card { 
+      padding: 30px 20px; 
+    } 
+   
+    .signup-title { 
+      font-size: 1.8rem; 
+    } 
+   
+    .signup-subtitle { 
+      font-size: 0.9rem; 
+    } 
+  }

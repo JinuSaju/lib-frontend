@@ -1,0 +1,45 @@
+.emailForm {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f7f7f7;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.emailForm input,
+.emailForm textarea {
+  padding: 12px;
+  font-size: 1rem;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  outline: none;
+}
+
+.emailForm input[type="text"],
+.emailForm input[type="email"] {
+  width: 100%;
+}
+
+.emailForm textarea {
+  width: 100%;
+  resize: vertical;
+}
+
+.emailForm button {
+  background-color: #007bff;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.3s ease;
+}
+
+.emailForm button:hover {
+  background-color: #0056b3;
+}

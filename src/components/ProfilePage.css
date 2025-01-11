@@ -1,0 +1,209 @@
+/* General Container */
+.profile-page-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #f1f8ff, #e0e7ff);
+    font-family: 'Poppins', sans-serif;
+    padding: 20px;
+  }
+  
+  /* Profile Card */
+  .profile-card {
+    background: #ffffff;
+    padding: 30px 40px;
+    border-radius: 20px;
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 650px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, filter 0.3s ease;
+    border: 1px solid #e5e5e5;
+  }
+  
+  .profile-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15);
+    filter: brightness(1.05);
+  }
+  
+  /* Profile Title */
+  .profile-title {
+    font-size: 30px;
+    color: #333;
+    font-weight: 700;
+    margin-bottom: 20px;
+    border-bottom: 3px solid #3498db;
+    padding-bottom: 10px;
+  }
+  
+  /* Profile View */
+  .profile-view {
+    text-align: left;
+    margin-top: 30px;
+  }
+  
+  .profile-info {
+    margin-bottom: 25px;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 15px;
+  }
+  
+  .profile-info p {
+    font-size: 18px;
+    color: #555;
+    line-height: 1.6;
+  }
+  
+  .profile-info span {
+    font-weight: 600;
+    color: #333;
+  }
+  
+  /* Edit Button */
+  .edit-btn {
+    background: #0b8fe7; /* Lighter blue */
+    color: white;
+    border: none;
+    padding: 14px 35px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+    font-size: 16px;
+    font-weight: 600;
+    margin-top: 30px;
+    text-transform: uppercase; /* Adds a more professional feel */
+    letter-spacing: 1px; /* Slightly increases space between letters */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1); /* Adds depth */
+  }
+  
+  .edit-btn:hover {
+    background: #108ee3; /* Darker blue */
+    transform: translateY(-4px); /* Slight lift */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15); /* Stronger shadow */
+  }
+  
+  /* Focused state for improved accessibility */
+  .edit-btn:focus {
+    outline: none;
+    box-shadow: 0 0 10px rgba(52, 152, 219, 0.6); /* Glowing effect on focus */
+  }
+  
+  /* Edit Button (active state) */
+  .edit-btn:active {
+    transform: translateY(-2px); /* Slight reduction on click */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Stronger shadow on active state */
+  }
+  
+  /* Edit Form */
+  .edit-profile-form {
+    margin-top: 25px;
+    text-align: left;
+  }
+  
+  .edit-profile-form .form-group {
+    margin-bottom: 25px;
+  }
+  
+  .edit-profile-form label {
+    display: block;
+    font-size: 16px;
+    color: #333;
+    font-weight: 600;
+    margin-bottom: 10px;
+  }
+  
+  .edit-profile-form input {
+    width: 100%;
+    padding: 14px;
+    font-size: 16px;
+    border: 1px solid #dcdcdc;
+    border-radius: 8px;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+    background-color: #f8f8f8;
+  }
+  
+  .edit-profile-form input:focus {
+    border-color: #3498db;
+    box-shadow: 0 0 8px rgba(52, 152, 219, 0.3);
+    outline: none;
+    background-color: #ffffff;
+  }
+  
+  /* Error Messages */
+  .error-message {
+    color: red;
+    font-size: 12px;
+    margin-top: 5px;
+  }
+  
+  /* Button Group */
+  .form-buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+  }
+  
+  .save-button,
+  .cancel-button {
+    padding: 14px 30px;
+    border: none;
+    border-radius: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: background 0.3s ease, transform 0.3s ease;
+  }
+  
+  .save-button {
+    background: #27ae60;
+    color: white;
+  }
+  
+  .save-button:hover {
+    background: #229954;
+    transform: translateY(-3px);
+  }
+  
+  .cancel-button {
+    background: #e74c3c;
+    color: white;
+  }
+  
+  .cancel-button:hover {
+    background: #c0392b;
+    transform: translateY(-3px);
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .profile-info {
+      grid-template-columns: 1fr;
+    }
+  
+    .profile-card {
+      padding: 20px;
+      max-width: 90%;
+    }
+  
+    .profile-title {
+      font-size: 24px;
+    }
+  
+    .edit-btn {
+      width: 100%;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .profile-title {
+      font-size: 20px;
+    }
+  
+    .save-button,
+    .cancel-button {
+      padding: 12px 25px;
+    }
+  }
