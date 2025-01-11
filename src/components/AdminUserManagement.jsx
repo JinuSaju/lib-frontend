@@ -9,7 +9,7 @@ const AdminUserManagement = () => {
   useEffect(() => {
     const fetchUsers = async () => {
       try {
-        const response = await axios.get('http://localhost:5000/api/users/all');
+        const response = await axios.get('https://lib-backend-8o2x.onrender.com/api/users/all');
         setUsers(response.data);
       } catch (err) {
         setError('Failed to fetch users');
@@ -23,7 +23,7 @@ const AdminUserManagement = () => {
   // Delete user handler
   const handleDeleteUser = async (userId) => {
     try {
-      await axios.delete(`http://localhost:5000/api/users/${userId}`);
+      await axios.delete(`https://lib-backend-8o2x.onrender.com/api/users/${userId}`);
       setUsers(users.filter(user => user._id !== userId));
       alert('User deleted successfully');
     } catch (err) {
@@ -36,7 +36,7 @@ const AdminUserManagement = () => {
   const handleBlockUser = async (userId) => {
     try {
       // eslint-disable-next-line no-unused-vars
-      const response = await axios.put(`http://localhost:5000/api/users/${userId}/block`);
+      const response = await axios.put(`https://lib-backend-8o2x.onrender.com/api/users/${userId}/block`);
       // Update local state to reflect blocked status
       setUsers(users.map(user => 
         user._id === userId 
@@ -54,7 +54,7 @@ const AdminUserManagement = () => {
   const handleUnblockUser = async (userId) => {
     try {
       // eslint-disable-next-line no-unused-vars
-      const response = await axios.put(`http://localhost:5000/api/users/${userId}/unblock`);
+      const response = await axios.put(`https://lib-backend-8o2x.onrender.com/api/users/${userId}/unblock`);
       // Update local state to reflect unblocked status
       setUsers(users.map(user => 
         user._id === userId 

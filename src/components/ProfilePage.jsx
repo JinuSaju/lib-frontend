@@ -122,7 +122,7 @@ const ProfilePage = () => {
         console.log("Fetching profile for email:", userEmail);
 
         const response = await axios.post(
-          'http://localhost:5000/api/users/profile', 
+          'https://lib-backend-8o2x.onrender.com/api/users/profile', 
           { email: userEmail }
         );
 
@@ -187,7 +187,7 @@ const ProfilePage = () => {
 
       // First, fetch the user to get the ID
       const userResponse = await axios.post(
-        'http://localhost:5000/api/users/profile', 
+        'https://lib-backend-8o2x.onrender.com/api/users/profile', 
         { email: userEmail }
       );
       
@@ -196,7 +196,7 @@ const ProfilePage = () => {
       console.log("Attempting to update user profile:", updatedUser);
       
       const response = await axios.put(
-        `http://localhost:5000/api/users/profile/${userId}`, 
+        `https://lib-backend-8o2x.onrender.com/api/users/profile/${userId}`, 
         updatedUser
       );
       

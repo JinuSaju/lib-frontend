@@ -12,7 +12,7 @@ function LoginPage() {
     e.preventDefault();
     console.log('Login button clicked');
     try {
-      const response = await axios.post('http://localhost:5000/api/users/login', {
+      const response = await axios.post('https://lib-backend-8o2x.onrender.com/api/users/login', {
         email,
         password
       });
@@ -103,7 +103,7 @@ function LoginPage() {
 
       console.log('Login attempt for:', email);
 
-      const response = await axios.post('http://localhost:5000/api/users/login', {
+      const response = await axios.post('https://lib-backend-8o2x.onrender.com/api/users/login', {
         email,
         password
       });

@@ -107,7 +107,7 @@ const AdminDashboard = () => {
   useEffect(() => {
     const fetchBooks = async () => {
       try {
-        const response = await fetch('http://localhost:5000/api/books');
+        const response = await fetch('https://lib-backend-8o2x.onrender.com/api/books');
         const data = await response.json();
         setBooks(data);
       } catch (error) {
@@ -164,7 +164,7 @@ const AdminDashboard = () => {
     }
 
     try {
-      const response = await fetch('http://localhost:5000/api/books', {
+      const response = await fetch('https://lib-backend-8o2x.onrender.com/api/books', {
         method: 'POST',
         body: formData
       });
@@ -199,7 +199,7 @@ const AdminDashboard = () => {
   // Delete book
   const handleDelete = async (isbn) => {
     try {
-      const response = await fetch(`http://localhost:5000/api/books/${isbn}`, {
+      const response = await fetch(`https://lib-backend-8o2x.onrender.com/api/books/${isbn}`, {
         method: 'DELETE'
       });
 

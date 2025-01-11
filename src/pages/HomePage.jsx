@@ -10,7 +10,7 @@ const HomePage = () => {
   useEffect(() => {
     const fetchBooks = async () => {
       try {
-        const response = await axios.get('http://localhost:5000/api/books');
+        const response = await axios.get('https://lib-backend-8o2x.onrender.com/api/books');
         setBooks(response.data);
         setLoading(false);
       } catch (error) {
@@ -107,7 +107,7 @@ const HomePage = () => {
             </button>
             <div className="book-details-inner">
               <h2>{selectedBook.title}</h2>
-              <img src={`http://localhost:5000/${selectedBook.coverImage}`} alt={selectedBook.title} />
+              <img src={`https://lib-backend-8o2x.onrender.com/${selectedBook.coverImage}`} alt={selectedBook.title} />
               <div className="book-details-grid">
                 <div className="book-detail-item">
                   <strong>Author:</strong> {selectedBook.author}
@@ -140,7 +140,7 @@ const HomePage = () => {
               className="book-card"
               onClick={() => handleBookClick(book)}
             >
-              <img src={`http://localhost:5000/${book.coverImage}`} alt={book.title} className="book-cover" />
+              <img src={`https://lib-backend-8o2x.onrender.com/${book.coverImage}`} alt={book.title} className="book-cover" />
               <h3>{book.title}</h3>
               <p>Author: {book.author}</p>
               <p>Genre: {book.genre}</p>
@@ -177,7 +177,7 @@ const HomePage = () => {
 
   const sendEmail = async (book) => {
     try {
-      await axios.post("http://localhost:5000/send-email", {
+      await axios.post("https://lib-backend-8o2x.onrender.com/send-email", {
         to: userEmail,
         subject: `Request to rent '${book.title}'`,
         html: `
@@ -200,7 +200,7 @@ const HomePage = () => {
   useEffect(() => {
     const fetchBooks = async () => {
       try {
-        const response = await axios.get('http://localhost:5000/api/books');
+        const response = await axios.get('https://lib-backend-8o2x.onrender.com/api/books');
         console.log('Fetched Books:', response.data);
         setBooks(response.data);
         setLoading(false);
@@ -223,7 +223,7 @@ const HomePage = () => {
 
   // Improved getImageUrl function with robust error handling
   const getImageUrl = (imagePath) => {
-    const defaultImage = 'http://localhost:5000/uploads/default-book-cover.jpg';
+    const defaultImage = 'https://lib-backend-8o2x.onrender.com/uploads/default-book-cover.jpg';
 
     if (!imagePath) {
       return defaultImage;
@@ -231,7 +231,7 @@ const HomePage = () => {
 
     try {
       const cleanPath = imagePath.replace(/^uploads\//, '');
-      return `http://localhost:5000/uploads/${cleanPath}`;
+      return `https://lib-backend-8o2x.onrender.com/uploads/${cleanPath}`;
     } catch (error) {
       console.error('Error processing image path:', error);
       return defaultImage;
@@ -262,7 +262,7 @@ const HomePage = () => {
                 alt={selectedBook.title}
                 className="book-details-image"
                 onError={(e) => {
-                  e.target.src = 'http://localhost:5000/uploads/default-book-cover.jpg';
+                  e.target.src = 'https://lib-backend-8o2x.onrender.com/uploads/default-book-cover.jpg';
                 }}
               />
             </div>
@@ -317,7 +317,7 @@ const HomePage = () => {
                   alt={book.title}
                   className="book-cover"
                   onError={(e) => {
-                    e.target.src = 'http://localhost:5000/uploads/default-book-cover.jpg';
+                    e.target.src = 'https://lib-backend-8o2x.onrender.com/uploads/default-book-cover.jpg';
                   }}
                 />
               </div>

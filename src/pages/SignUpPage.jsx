@@ -218,7 +218,7 @@ function SignUpPage() {
   
       console.log('Sending signup data:', dataToSend);
   
-      const response = await axios.post('http://localhost:5000/api/users/register', dataToSend, {
+      const response = await axios.post('https://lib-backend-8o2x.onrender.com/api/users/register', dataToSend, {
         headers: {
           'Content-Type': 'application/json'
         }
