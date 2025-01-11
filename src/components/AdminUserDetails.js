@@ -10,7 +10,7 @@ const AdminUserDetails = () => {
     // Fetch user details and rented books using the user ID from the URL
     const fetchUserDetails = async () => {
       try {
-        const response = await fetch(`http://localhost:3000/api/user/${id}`);
+        const response = await fetch(`https://lib-backend-8o2x.onrender.com/api/user/${id}`);
         const data = await response.json();
         setUserDetails(data.user);
         setRentedBooks(data.books); // Assuming the response contains both user and books data
