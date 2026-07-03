@@ -1,70 +1,131 @@
-# Getting Started with Create React App
+# 📚 Library Management System
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A full-stack Library Management System that allows users to browse books, view book details, request rentals, and manage their profiles. Administrators can manage books, users, rental status, and book cover images through a centralized dashboard.
 
-## Available Scripts
+## 🚀 Features
 
-In the project directory, you can run:
+### 👤 User Features
 
-### `npm start`
+* User Registration and Login
+* Secure Authentication
+* Profile Management
+* Browse Available Books
+* View Detailed Book Information
+* Request Book Rentals
+* Receive Email Confirmation for Rental Requests
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### 📖 Book Management
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+* Add New Books
+* Delete Books
+* Upload Book Cover Images
+* View Book Inventory
+* Track Rental Status
+* Search and Browse Collection
 
-### `npm test`
+### 🛠️ Admin Features
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+* View All Registered Users
+* Block/Unblock Users
+* Delete Users
+* Manage Book Inventory
+* Monitor Rental Requests
 
-### `npm run build`
+### 📧 Email Notifications
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+* Automated rental request confirmation emails
+* Gmail SMTP integration using Nodemailer
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+---
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## 🏗️ Tech Stack
 
-### `npm run eject`
+### Frontend
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+* React.js
+* Axios
+* CSS3
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### Backend
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+* Node.js
+* Express.js
+* MongoDB
+* Mongoose
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+### Additional Packages
 
-## Learn More
+* Multer (Image Uploads)
+* Nodemailer (Email Service)
+* CORS
+* Dotenv
+* Body Parser
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+---
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## 📂 Project Structure
 
-### Code Splitting
+```bash
+Library-Management-System/
+│
+├── frontend/
+│   ├── src/
+│   ├── components/
+│   ├── pages/
+│   └── assets/
+│
+├── backend/
+│   ├── controllers/
+│   ├── models/
+│   ├── routes/
+│   ├── uploads/
+│   └── server.js
+│
+└── README.md
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+---
 
-### Analyzing the Bundle Size
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+## 🔐 User Authentication
 
-### Making a Progressive Web App
+Users can:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+* Register
+* Login
+* Update Profile
+* Access Book Inventory
 
-### Advanced Configuration
+Administrators can:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+* Block Users
+* Unblock Users
+* Delete Users
 
-### Deployment
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+## 📬 Rental Request Workflow
 
-### `npm run build` fails to minify
+1. User selects a book.
+2. Clicks **Rent Book**.
+3. Request is sent to the backend.
+4. Confirmation email is delivered automatically.
+5. Rental status can be managed by administrators.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+---
+
+## 🌐 Hosted Link
+
+🔗 https://library-azure-chi.vercel.app/
+
+
+
+## 👨‍💻 Author
+
+**Jinu J Saju**
+
+B.Tech Computer Science & Engineering
+Mar Baselios College of Engineering and Technology, Trivandrum
+
+---
+
